@@ -315,3 +315,39 @@ a {
   background-color: #d1d1ff;
   color: #000;
 }
+
+/* graoh section */
+.graph-section {
+  width: 100%;
+  padding: 4rem 3.5rem;
+}
+.graph-section h2 {
+  font-size: 3.2rem;
+  color: #1b1b1b;
+  font-weight: 600;
+}
+.graph-section p {
+  color: #1b1b1b;
+  font-size: 2rem;
+}
+.graph-section-header {
+  margin-bottom: 5.5rem;
+}
+.graphs {
+  display: flex;
+}
+.graph-section-element {
+  height: 32rem;
+  border: 1px solid black;
+  padding: 2rem;
+}
+.graph-section-element p {
+  color: #333333;
+}
+
+.graph-section-element > :first-child {
+  font-size: 2rem;
+}
+.graph-section-element p:nth-child(2) {
+  font-size: 1.6rem;
+}
