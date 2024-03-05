@@ -1,1 +1,317 @@
+@font-face {
+  font-family: inter;
+  src: url("./assets/fonts/ttf/Inter-Light.ttf") format("ttf"),
+    url("./assets/fonts/woff/Inter-Light.woff") format("woff");
+  font-weight: 300;
+}
+@font-face {
+  font-family: inter;
+  src: url("./assets/fonts/ttf/Inter-Regular.ttf") format("ttf"),
+    url("./assets/fonts/woff/Inter-Regular_1.woff") format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: inter;
+  src: url("./assets/fonts/ttf/Inter-Medium.ttf") format("ttf"),
+    url("./assets/fonts/woff/Inter-Medium_1.woff") format("woff");
+  font-weight: 500;
+}
+@font-face {
+  font-family: inter;
+  src: url("./assets/fonts/ttf/Inter-Bold.ttf") format("ttf"),
+    url("./assets/fonts/woff/Inter-Bold.woff") format("woff");
+  font-weight: 700;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  line-height: 1.7;
+  font-weight: 500;
+}
+html {
+  font-size: 62.5%;
+}
+body,
+a {
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+/* defining header background and height */
+.header {
+  height: 90vh;
+  background-image: url(/assets/images/hero.webp);
+  background-size: cover;
+  background-position: center;
+}
+/*  defining nav items  */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  align-items: center;
+  padding: 1.8rem 3rem;
+  border: 1px solid #e7e7e7;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+.logo {
+  width: 2.2rem;
+  height: 3.5rem;
+}
+.navbarLeft {
+  width: 52%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  color: #333333;
+}
+.angle-down {
+  font-size: 1.4rem;
+  padding-left: 0.2rem;
+  vertical-align: center;
+}
 
+.navbarRight {
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 3rem;
+}
+.search-button {
+  width: 17.2rem;
+  height: 4.2rem;
+  border-radius: 5px;
+  border: 1px solid #e7e7e7;
+  vertical-align: center;
+}
+.language {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.language i {
+  font-size: 2rem;
+}
+.night-mood {
+  font-size: 2.5rem;
+  vertical-align: center;
+}
+.night-mood:hover,
+.language i:hover {
+  transition: 0.9s;
+  transform: rotate(-15deg);
+}
+
+.search-button {
+  color: #333333;
+  background-color: #fff;
+  font-size: 1.6rem;
+  padding: 8px 16px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+.search-button:hover {
+  border: 1px solid blue;
+}
+.nav-items:hover,
+.night-mood:hover,
+.language:hover {
+  color: blue;
+  cursor: pointer;
+}
+/* end of web header */
+
+/* hero section */
+.hero {
+  margin: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.hero h1 {
+  font-size: 4.8rem;
+  font-weight: 700;
+}
+.hero p {
+  max-width: 40%;
+  font-size: 2rem;
+  text-align: center;
+}
+.transparent-button,
+.blue-button {
+  font-size: 16px;
+  padding: 1rem 2rem;
+  margin-right: 1rem;
+
+  border: 1px solid #1c1cff;
+  border-radius: 5px;
+}
+.blue-button {
+  background-color: #1c1cff;
+  color: white;
+}
+.blue-button:hover {
+  background-color: #5555ff;
+}
+.transparent-button {
+  background-color: transparent;
+  color: #1c1cff;
+}
+.transparent-button:hover {
+  color: #5555ff;
+}
+/* end of hero section */
+
+/* getting start section */
+.bold-section {
+  padding: 9.6rem;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  width: 100%;
+}
+.bold-section h2 {
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+.bold-section p {
+  max-width: 90%;
+  font-size: 2rem;
+  text-align: justify;
+  margin-bottom: 4rem;
+}
+.section-image {
+  width: 50%;
+}
+/* link section */
+.link-section {
+  margin: 50px 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.top-links {
+  margin-bottom: px;
+}
+.link-card {
+  border: 1px solid black;
+  margin: 20px;
+  box-shadow: 3px 3px 5px 0px rgba(134, 131, 131, 0.747);
+  width: 600px;
+  height: 450px;
+  margin-bottom: 30px;
+}
+.card-header {
+  height: 300px;
+  background-color: #d0e9de;
+  background-size: 400px;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+/* setting background images for cards header */
+.card-header1 {
+  background-image: url("/assets/images/wallet.webp");
+}
+.card-header2 {
+  background-image: url("/assets/images/eth.png");
+}
+.card-header3 {
+  background-image: url("/assets/images/doge-computer.webp");
+}
+.card-header4 {
+  background-image: url("/assets/images/developers-eth-blocks.webp");
+}
+/* end of backgroung images for link section */
+
+.card-body h3 {
+  color: #333333;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.card-body {
+  padding: 20px;
+}
+.card-body p {
+  padding: 10px 0;
+  color: rgba(0, 0, 0, 64%);
+}
+
+.card:visited,
+.card:link,
+.card:active,
+.card:hover {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+}
+
+.eth-section,
+.asset-section {
+  background-color: #e1fefa;
+}
+.financial-section,
+.open-internet-section {
+  background-color: #ffe3d3;
+}
+.open-internet-section {
+  z-index: 100;
+  padding-right: 0;
+}
+
+/* new development with table section */
+.new-development {
+  background-color: #e8e8ff;
+}
+.frontier {
+  width: 50%;
+}
+
+/* code examples table */
+.code-examples {
+  border: 1px solid black;
+  font-weight: bold;
+}
+.code-example-header {
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+.code-example-header {
+  padding: 1.5rem;
+  background-color: #f7f7f7;
+}
+
+.code-example-elements {
+  border-bottom: 1px solid #c0bcbcbb;
+  padding: 1.5rem 1.5rem 1rem 1.5rem;
+  background-color: #fff;
+}
+.code-example-elements h3 {
+  font-size: 1.6rem;
+  color: #333333;
+}
+.code-example-elements p {
+  color: #929090;
+  font-size: 1.4rem;
+  margin-bottom: 0;
+  white-space: nowrap;
+}
+
+/* table on hover */
+.code-example-elements:hover,
+.code-example-elements:hover p,
+.code-example-elements:hover h3 {
+  background-color: #d1d1ff;
+  color: #000;
+}
