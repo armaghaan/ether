@@ -198,13 +198,13 @@ a {
 .link-section {
   margin: 50px 50px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 
-.top-links {
+/* .top-links {
   margin-bottom: px;
-}
+} */
 .link-card {
   border: 1px solid black;
   margin: 20px;
@@ -335,8 +335,10 @@ a {
 }
 .graphs {
   display: flex;
+  justify-content: center;
 }
 .graph-section-element {
+  width: 65rem;
   height: 32rem;
   border: 1px solid black;
   padding: 2rem;
@@ -350,4 +352,95 @@ a {
 }
 .graph-section-element p:nth-child(2) {
   font-size: 1.6rem;
+}
+
+/* explore section */
+.explore {
+  padding: 5rem;
+}
+.explore-card {
+  height: 44rem;
+  border: 1px solid black;
+}
+.explore-card-header {
+  height: 60%;
+  background-color: #d0e9de;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+.explore-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.explore-top {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+.card-top {
+  width: 50%;
+}
+.explore-card-body {
+  padding: 2rem;
+}
+.explore-card h3 {
+  font-weight: 600;
+  padding-bottom: 2rem;
+  color: #333333;
+}
+.explore-card:hover {
+  transform: scale(1.05);
+}
+.explore-card:hover h3 {
+  color: #5555ff;
+}
+/* setting background images for explore cards header */
+.explore-card1 {
+  background-image: url("/assets/images/merge.webp");
+  zoom: 50%;
+}
+.explore-card2 {
+  background-image: url("/assets/images/infrastructure_transparent.webp");
+  zoom: 20%;
+}
+.explore-card3 {
+  background-image: url("/assets/images/enterprise-eth.webp");
+  zoom: 40%;
+}
+
+/* fairy system */
+.fairy-system {
+  margin: 0 auto;
+  width: 100%;
+  background-color: #e0e8fb;
+  height: max-content;
+  padding: 0 10rem;
+}
+
+/* footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 3.5rem;
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.footer-link,
+.footer-link:hover,
+.footer-link:visited {
+  color: #838080ef;
+  font-family: "inter", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  white-space: break-spaces;
+}
+.footer li {
+  padding: 0.7rem 0;
+}
+.footer-header {
+  font-weight: 600;
 }
